@@ -7,36 +7,104 @@ img {
     width: 100%;
 }
 
+.div-boton {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px #BEC1BB;
+    width: 100%;
+}
+
+.boton-chat {
+    background-color: #A491D2;
+    border: none;
+}
+
+.boton-chat:hover {
+    background-color: #CDC3E6;
+}
+
+.boton-chat:focus {
+    background-color: #BEC1BB;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-light-white {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+
+.roboto-light-gris {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #707070;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-medium-succes {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #28a745;
+}
+
+.roboto-medium-white {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+}
+
 .flex {
     display: flex;
-    border: solid 1px;
 
 }
 
 .flex-item {
     display: flex;
-    background-color: aqua;
-    border: solid 1px black;
-    margin: 1px;
     flex-grow: 1;
     flex-basis: 0;
+    border-bottom: solid 1px #BEC1BB;
+    width: 100%;
 }
 
 .flex-chat {
-    display: flex 0 auto;
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
-    background-color: aqua;
-    flex-grow: 1;
+    background-color: #fff;
+    border: solid 1px #BEC1BB;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 1px #BEC1BB;
+    width: 100%;
 }
 
 .avatar {
     display: flex;
-    background-color: aqua;
-    margin: 1px;
-    flex-grow: 1;
-    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.acciones{
+    position: relative;
+    display: inline-block;
 }
 
 .avatar img {
@@ -65,6 +133,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-grow: 3;
+    background-color: #E8EBE4;
 
 }
 
