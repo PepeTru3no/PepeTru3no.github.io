@@ -1,6 +1,11 @@
-* {
-    padding: 0;
+/* * {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     margin: 0;
+    padding: 0;
+    color: #1b1f21;
+    background-color: rgb(255, 255, 255);
 }
 
 img {
@@ -10,13 +15,17 @@ img {
 .div-boton {
     display: flex;
     justify-content: center;
-    border-bottom: solid 1px #BEC1BB;
-    width: 100%;
+    padding: 3em;
 }
 
 .boton-chat {
     background-color: #A491D2;
     border: none;
+    padding: 16px;
+    font-size: 16px;
+    color: white;
+    width: 10vw;
+    min-width: 113px;
 }
 
 .boton-chat:hover {
@@ -27,44 +36,11 @@ img {
     background-color: #BEC1BB;
 }
 
-.roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.roboto-light-white {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: white;
-}
-
-.roboto-light-gris {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: #707070;
-}
-
-.roboto-medium {
+.roboto-bold {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-style: normal;
-}
-
-.roboto-medium-succes {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #28a745;
-}
-
-.roboto-medium-white {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #fff;
+    font-style: bold;
+    color: #1b1f21;
 }
 
 .flex {
@@ -74,26 +50,27 @@ img {
 
 .flex-item {
     display: flex;
-    flex-grow: 1;
-    flex-basis: 0;
     border-bottom: solid 1px #BEC1BB;
+    border-top: solid 1px #BEC1BB;
     width: 100%;
 }
 
 .flex-chat {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     align-items: center;
     background-color: #fff;
     border: solid 1px #BEC1BB;
+    width: 20vw;
+    min-height: 100vh;
+    min-width: 260px;
 }
 
 .cabecera {
     display: flex;
     justify-content: space-around;
-    border-bottom: solid 1px #BEC1BB;
-    width: 100%;
+    width: 20vh;
+    min-width: 260px;
 }
 
 .avatar {
@@ -102,28 +79,33 @@ img {
     align-items: center;
 }
 
-.acciones{
+.acciones {
     position: relative;
     display: inline-block;
 }
 
+.acciones-button {
+    background-color: x#ffffff;
+    color: #bec1bb;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
 .avatar img {
-    height: 5rem;
-    width: 5rem;
-    background-repeat: no-repeat;
-    background-position: 50%;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
-    background-size: 100% auto;
+    padding: 0, 5rem;
 
 }
 
 .flex-item img {
     height: 6rem;
     width: 6rem;
-    background-repeat: no-repeat;
-    background-position: 50%;
     border-radius: 50%;
     background-size: 100% auto;
+    padding: 0.5rem;
 
 }
 
@@ -140,4 +122,154 @@ img {
 .div-central img {
     width: 30%;
 
+} */
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: #1b1f21;
+    background-color: rgb(255, 255, 255);
+}
+
+.flex {
+    display: flex;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-chat {
+    border-width: 1px;
+    border-color: #bec1bb;
+    border-style: solid;
+    width: 20vw;
+    min-height: 100vh;
+    min-width: 260px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    padding: 0.5rem;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    color: #1b1f21;
+}
+
+.div-boton {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    border-width: 1px;
+    border-color: #bec1bb;
+}
+
+.div-boton button {
+    background-color: #a491d2;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    width: 10vw;
+    min-width: 113px;
+}
+
+.div-boton button:hover {
+    background-color: #cdc3e6;
+}
+
+.div-boton button:focus {
+    background-color: #bec1bb;
+}
+
+.flex-item img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 0.5rem;
+}
+
+.flex-item {
+    border-top-width: 1px;
+    border-top-color: #bec1bb;
+    border-top-style: solid;
+    padding: 0.5rem;
+}
+
+.flex-item1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.div-central img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 0 auto;
+}
+
+.vista-previa {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    color: #1b1f21;
+    font-size: 48px;
+}
+
+b {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    color: #1b1f21;
+    font-size: 14px;
+}
+
+.acciones {
+    position: relative;
+    display: inline-block;
+}
+
+.acciones-button {
+    background-color: #ffffff;
+    color: #bec1bb;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.acciones-button:hover {
+    background-color: #e8ebe4;
+}
+
+.acciones-button:focus {
+    background-color: #bec1bb;
 }
