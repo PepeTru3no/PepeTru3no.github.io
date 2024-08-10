@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 5fr 90fr 5fr;
+    grid-template-areas: 
+    'header header'
+    'asidebar gallery'
+    'footer footer';
+    height: 100vh;
+}
+
+.box{
+    border: 1px solid red;
+}
+
+.box img {
+    width: 100%;
+}
+
+.header{
+    background-color: darkblue;
+    color: white;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asidebar{
+    background-color: #cdcdcd;
+    grid-area: asidebar;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.asidebar a{
+    color: rgb(80, 77, 77);
+    text-decoration: none;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.asidebar p{
+    color: grey;
+}
+
+.gallery{
+    background-color:#cdcdcd;
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    overflow: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.card img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.footer{
+    background-color: white;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btnCompra{
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    border: 0;
+    padding: 0.5rem;
+}
