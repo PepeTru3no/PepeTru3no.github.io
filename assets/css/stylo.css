@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* implementamos el estilo base y nombre para las areas del layout a usar com template areas */
+
+.nav {
+    color: white;
+    background-color: blue;
+    grid-area: menu_nav;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-oculto {
+    display: none;
+    position: absolute;
+}
+
+.main {
+    padding: 10px;
+    grid-area: principal;
+    background-color: #cdcdcd;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: scroll;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.footer {
+    padding: 10px;
+    grid-area: pie_pagina;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter {
+    padding: 10px;
+    color: aliceblue;
+    background-color: blueviolet;
+    grid-area: filtro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* mobile first */
+.grid {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    border: 1px solid #000000;
+    grid-template-rows: 0, 5fr 2fr 60fr 1fr;
+    grid-template-areas:
+        "menu_nav"
+        "filtro"
+        "principal"
+        "pie_pagina";
+}
+
+
+.button {
+    margin: 50%;
+    background-color: red;
+
+}
+
+@media(min-width: 576px) {
+    .button {
+        border-radius: 15px;
+    }
+
+    .grid {
+        grid-template-columns: 5fr 50fr;
+        grid-template-rows: 5fr 90fr 5fr;
+        grid-template-areas:
+            'menu_nav menu_nav'
+            'filtro principal'
+            'pie_pagina pie_pagina';
+        height: 100vh;
+    }
+
+    .filter {}
+
+    .menu {
+        display: none;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .menu-oculto {
+        display: inline;
+    }
+
+    .menu-oculto li {
+        display: flex;
+        gap: 5px;
+
+    }
+
+    .menu-oculto a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .main {
+        grid-template-columns: 1fr 1fr;
+        gap: 5;
+        overflow: scroll;
+    }
+
+    /* .grid {
+        grid-template-columns: 1fr 1fr;
+    } */
+
+    /*  p{
+        color: red;
+        font-size: x-small;
+    }
+    body{
+        background-color: green;
+    } */
+}
+
+@media(min-width: 768px) {
+    .button {
+        color: white;
+    }
+
+    .grid {
+        grid-template-columns: 5fr 50fr;
+        grid-template-rows: 5fr 90fr 5fr;
+        grid-template-areas:
+            'menu_nav filtro'
+            'menu_nav principal'
+            'pie_pagina principal';
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-oculto {
+        display: inline-flex;
+    }
+
+    .menu-oculto a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10;
+        overflow: scroll;
+    }
+
+
+    /* .grid {
+        grid-template-columns: repeat(4, 1fr);
+    } */
+
+    /*  p{
+        color: black;
+        font-size: xx-large;
+    }
+
+    body{
+        background-color: aliceblue;
+    } */
+}
+
+@media(min-width: 992px) {
+    /* .button {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 5fr 90fr 5fr;
+        grid-template-areas:
+            'menu-nav filtro'
+            'menu-nav principal'
+            'pie-pagina principal';
+        height: 100vh;
+    }
+
+    .main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5;
+        overflow: auto;
+    } */
+
+
+    /* p{
+        color: aliceblue;
+        font-size: small;
+    }
+    
+    body{
+        background-color: black;
+    } */
+}
