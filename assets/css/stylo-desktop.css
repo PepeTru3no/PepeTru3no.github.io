@@ -1,0 +1,31 @@
+@media(min-width: 992px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        overflow: auto;
+    }
+
+    .card img {
+        transform: scale(1);
+        transition: transform 3s ease-in-out;
+    }
+
+    .card img:hover {
+        animation: rotar 3s linear;
+        transform: scale(0.7);
+    }
+
+    @keyframes rotar {
+        0% {
+            transform: scale(0.9) scalex(1);
+        }
+
+        50% {
+            transform: scalex(-1) scale(0.8);
+        }
+
+        100% {
+            transform: scale(0.7) scalex(1);
+        }
+
+    }
+}

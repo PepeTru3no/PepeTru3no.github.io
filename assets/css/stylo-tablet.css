@@ -1,0 +1,7 @@
+@media(min-width: 768px) {
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+        overflow: auto;
+    }
+
+}
