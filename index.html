@@ -3,86 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/stylo-mobil.css">
-    <link rel="stylesheet" href="./assets/css/stylo-tablet.css">
-    <link rel="stylesheet" href="./assets/css/stylo-desktop.css">
-    <title>Animaciones</title>
+    <title>Desafío 1 - JavaScript</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
 </head>
 
 <body>
-    <div class="main-container">
-        <header class="header">
-            <div>
-                <i class="caminata fa-brands fa-opensuse fa-xl"></i>
-            </div>
-            <h2>Tienda de Mascotas</h2>
-            <div class="dropdown">
-                <i class="abre-cierra fa-solid fa-caret-down fa-xl"></i>
-                <div class="dropdown-content">
-                    <a href="#">Alimentos </a>
-                    <a href="#">Juguetes</a>
-                    <a href="#">Atencion Veterinaria</a>
-                    <a href="#">Mascotas</a>
-                </div>
-            </div>
-        </header>
-        
-        <side class="asidebar">
-            <a href="#">Alimentos </a>
-            <a href="#">Juguetes</a>
-            <a href="#">Atencion Veterinaria</a>
-            <a href="#">Mascotas</a>
-        </side>
-        <main class="gallery">
-            <div class="card">
-                <img src="./assets/imgs/atencion-veterinaroa.jpeg" alt="atencion veterinaria">
-                <h3>Primera consulta</h3>
-                <p>$ 0 .-</p>
-                <button class="btnCompra">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./assets/imgs/adopcion.jpeg" alt="adopcion">
-                <h3>Adopta un amigo</h3>
-                <p>$ 0 .-</p>
-                <button class="btnCompra">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./assets/imgs/hotel.jpeg" alt="hotel">
-                <h3>Hotel de Macotas</h3>
-                <p>$ 1.000 .- /dia</p>
-                <button class="btnCompra">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./assets/imgs/guardian.jpeg" alt="guardian">
-                <h3>Pastor Aleman</h3>
-                <p>$ 500 .-</p>
-                <button class="btnCompra">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./assets/imgs/iguana.jpeg" alt="iguana">
-                <h3>Iguana</h3>
-                <p>$ 700 .-</p>
-                <button class="btnCompra">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./assets/imgs/th.jpeg" alt="gatito">
-                <h3>Gatitos</h3>
-                <p>$ 300 .-</p>
-                <button class="btnCompra">Comprar</button>
-            </div>
-        </main>
-        <footer class="footer">
-            <a href="https://www.linkedin.com/in/jose-enrique-vinet-campos-0317a473?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                target="_blank">
-                <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            <a href="#"><i class="fa-solid fa-address-book"></i> Contacto</a>
-            <a href="#"><i class="fa-brands fa-square-x-twitter"></i> Twitter</a>
-            <a href="#"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
-        </footer>
+
+    <section>
+        <div class="card">
+            <div class="img-card"></div>
+            <h6>Laptop Gamer AMD</h6>
+            <p>Precio base: $<span class="precio-inicial"></span> </p>
+
+            <p>Cantidad:
+                <span class="cantidad">0</span>
+                <button class="botonMas" >+</button>
+                <button class="botonMenos">-</button>
+            </p>
+        </div>
+
+        </div>
+    </section>
+
+    <div class="total-section">
+        <p>Total a pagar: $<span class="valor-total"></span> </p>
     </div>
 
-    <script src="https://kit.fontawesome.com/2162a61927.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/index.js">
+
+
+    </script>
 </body>
 
 </html>
