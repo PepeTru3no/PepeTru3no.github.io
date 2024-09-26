@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0 0 3% 0;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilo de cambio de borde */
+
+.img{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* estilo de sticker */
+
+.stickers{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+.sticker{
+    flex-direction: column;
+    align-items: center;
+}
+
+.sticker img{
+    width: 100%;
+}
+
+.pieSticker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonSticker{
+    width: 30%;
+}
+
+/* estilos de password */
+
+.pass{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-content: center;    
+}
+
+.validador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.btnComprobar{
+    width: 30%;
+}
