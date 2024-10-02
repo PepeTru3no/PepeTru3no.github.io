@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Condiciones</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div>
+        <!-- seccion cambio borde de imagen -->
+        <h1>"Cambio de borde con click"</h1>
+        <div class="img">
+            <img width="50%" height="50%" src="./assets/imgs/iguana-3.jpg" alt="una iguana" class="imagen"/>
+        </div>
+        <hr>
+        <br>
+        <!-- seccion de cotador de sticker -->
+        <h1>"Contador de sticker"</h1>
+        <div class="stickers">
+            <div class="sticker">
+                <img src="./assets/imgs/iguana-1.jpg" alt="iguana 1">
+                <input type="number" min="0" name="sticker1" id="sticker1">
+            </div>
+            <div class="sticker">
+                <img src="./assets/imgs/iguana-2.jpg" alt="iguana 2">
+                <input type="number" min="0" name="sticker2" id="sticker2">
+            </div>
+            <div class="sticker">
+                <img src="./assets/imgs/iguana-4.jpg" alt="iguana 4">
+                <input type="number" min="0" name="sticker3" id="sticker3">
+            </div>
+        </div>
+        <div class="pieSticker">
+            <p class="texto"></p>
+            <button type="button" class="botonSticker">Enviar</button>
+        </div>
+
+        <hr>
+        <br>
+        <!-- seccion password -->
+        <h1>"Seccion Password"</h1>
+        <div class="pass">
+            <div></div>
+            <div>
+                <select name="pass1" id="pass1">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="pass2" id="pass2">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="pass3" id="pass3">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <div></div>
+        </div>
+        <div class="validador">
+            <button type="button" class="btnComprobar">Enviar</button>
+            <p class="validacion"></p>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
