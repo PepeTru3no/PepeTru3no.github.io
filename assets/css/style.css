@@ -5,12 +5,10 @@ h1{
 .containerForm{
     display: flex;
     flex-direction: column;
-    width: 30%;
     align-items: center;
     justify-content: center;
     color: antiquewhite;
     background-color: darkslategrey;
-    margin-left: 33%;
 }
 
 #grafico{
@@ -33,4 +31,12 @@ h1{
 #resultado{
     width: 80%;
     text-align: center;
+}
+
+@media(min-width: 768px) {
+
+    .containerForm{
+        width: 30%;
+        margin-left: 33%;
+    }
 }
