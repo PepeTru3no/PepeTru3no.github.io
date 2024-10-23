@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <title>Conversor de moneda</title>
+</head>
+
+<body style="background-color: black;">
+    <div class="container">
+        <hr style="color: white;" />
+        <h1 style="color: aliceblue;">Conversor de monedas</h1>
+        <hr style="color: white;" />
+        <div class="containerForm">
+            <label for="montoClp">Pesos CLP</label>
+            <input type="number" name="montoClp" id="montoClp" class="form-control">
+            <label for="dropTipo"> Moneda a Convertir</label>
+            <select name="dropTipo" id="dropTipo" class="custom-select">
+            </select>
+            <br>
+            <button type="button" class="btn btn-primary" id="btnBuscar">Buscar</button>
+            <br>
+            <div id="resultado">----</div>
+        </div>
+        <br>
+        <div id="divGrafico">
+            <canvas id="grafico"></canvas>
+        </div>
+        </canvas>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/f5bdbb41e0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
