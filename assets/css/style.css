@@ -5,7 +5,7 @@ h1{
 .containerForm{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 30svw;
     align-items: center;
     justify-content: center;
     color: antiquewhite;
