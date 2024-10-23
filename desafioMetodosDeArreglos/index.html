@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Todo List</h1>
+        <p>Nueva Tarea</p>
+        <input type="text" name="nuevaTarea" id="nuevaTarea">
+        <button type="button" id="botonAgregar">Agregar</button>
+        <p>Total: <span id="total"></span></p>
+        <p>Realizados: <span id="realizados"></span></p>
+        <table border="2" class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tarea</th>
+                    <th>Realizado</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="muestraTareas"></tbody>
+        </table>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/f5bdbb41e0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

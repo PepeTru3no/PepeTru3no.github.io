@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+
+.containerForm{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    background-color: darkslategrey;
+    margin-left: 33%;
+}
+
+#grafico{
+    width: 80%;
+    height: 80%;
+}
+
+#dropTipo{
+    width: 60%;
+}
+
+#montoClp{  
+    width: 60%;
+}
+
+#btnBuscar{
+    width: 60%; 
+}
+
+#resultado{
+    width: 80%;
+    text-align: center;
+}
